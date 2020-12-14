@@ -11,8 +11,6 @@ import { WorkerFilterPipe } from '../shared/pipes/worker-filter.pipe';
 import { MomentModule } from 'ngx-moment';
 
 
-
-
 @NgModule({
   declarations: [
     WorkersComponent,

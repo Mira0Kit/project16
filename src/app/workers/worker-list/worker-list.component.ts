@@ -5,36 +5,32 @@ import { WorkerService } from 'src/app/shared/services/worker.service';
 import * as Tablesort from 'tablesort'
 
 
-
 @Component({
   selector: 'app-worker-list',
   templateUrl: './worker-list.component.html',
-  styleUrls: ['./worker-list.component.css']
+  styleUrls: ['./worker-list.component.css',
+]
 })
 export class WorkerListComponent implements OnInit {
   title: string;
   workers: Mworker[];
   workerType: WorkerType;
-
   searchStr = "";
   today: Date;
 
- 
-  constructor(private workerService: WorkerService, private router: Router) { this.today = new Date(); }
+  constructor(private workerService: WorkerService, private router: Router) {
+     this.today = new Date(); 
+    }
 
   ngOnInit(): void {
     this.getData();
-      new Tablesort(document.getElementById('table-id'));
+    new Tablesort(document.getElementById('table-id'));
   }
 
-
-
-  
   async getData() {
     try {
       let workers = this.workerService.getAll();
       this.workers = ((await workers) == null || (await workers) == undefined) ? [] : await workers;
-      
     }
     catch(err) {
       console.error(err);
@@ -59,6 +55,4 @@ export class WorkerListComponent implements OnInit {
     this.getData();
     //sort.refresh();
   }
-
-  
 }

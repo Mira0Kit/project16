@@ -83,13 +83,12 @@ export class WorkerEditComponent implements OnInit {
   async onSave() {
     if (this.id !== null && this.id !== undefined) {
       try {
-        await this.workerService.putOne(this.id, this.workerForm.value);
+        await this.workerService.putOneById(this.id, this.workerForm.value);
       }
       catch (err) {
         console.error(err);
       }
     }
-
     else {
       try {
         let res = await this.workerService.postOne(this.workerForm.value);

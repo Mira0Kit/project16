@@ -1,16 +1,6 @@
 {
   "workers": [
     {
-      "name": "Иван",
-      "surname": "Иванов",
-      "patronymic": "Иванович",
-      "number": "+7(653)432-56-32",
-      "email": "ivanovww@mail.ru",
-      "birthdate": "10.04.2010",
-      "type": 0,
-      "id": 1
-    },
-    {
       "name": "Сидр",
       "surname": "Сидоров",
       "patronymic": "Иванович",
@@ -39,6 +29,16 @@
       "birthdate": "11.01.1965",
       "type": 3,
       "id": 4
+    },
+    {
+      "name": "Иван",
+      "surname": "Иванов",
+      "patronymic": "Иванович",
+      "number": "+7(333)333-33-33",
+      "email": "ivanovww@mail.ru",
+      "birthdate": "22.04.1955",
+      "type": 0,
+      "id": 5
     }
   ]
 }

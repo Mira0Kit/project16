@@ -38,7 +38,7 @@ export class BaseHttp {
         return this.post(`${this.path}`, data).toPromise();
     }
 
-    public putOne(id: number, data: any): Promise<any> {
+    public putOneById(id: number, data: any): Promise<any> {
         return this.put(`${this.path}/${id}`, data).toPromise();
     }
 
