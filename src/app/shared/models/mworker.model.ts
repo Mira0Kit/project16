@@ -15,3 +15,10 @@ export enum MworkerType {
     delivery,
     legal
 }
+
+export enum MworkerTypeRu {
+    IT,
+    Продажи,
+    Доставка,
+    Юридический
+}

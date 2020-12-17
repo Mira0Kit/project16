@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Mworker } from 'src/app/shared/models/mworker.model';
+import { Mworker, MworkerTypeRu } from 'src/app/shared/models/mworker.model';
 import { WorkerService } from 'src/app/shared/services/worker.service';
 import * as Tablesort from 'tablesort'
 
@@ -15,6 +15,7 @@ export class WorkerListComponent implements OnInit {
   title: string;
   workers: Mworker[];
   workerType: WorkerType;
+  ruWorkerType = MworkerTypeRu;
   searchStr = "";
   today: Date;
 
